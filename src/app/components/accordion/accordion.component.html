@@ -1,0 +1,8 @@
+<div [ngClass]="setClasses()" (click)="OnClick()">
+    <div class="accordion-question">
+        <span class="question-number">Q{{faq.id}}</span>
+        {{ faq.question }}
+        <span class="icon"><img src="../../../assets/plus-icon.png" /></span>
+    </div>
+    <p class="accordion-answer">{{ faq.answer }}</p>
+</div>

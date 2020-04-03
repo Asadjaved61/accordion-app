@@ -1,0 +1,9 @@
+<div class="accordion-container">
+    <h1>HAVE A QUESTION? WE CAN HELP</h1>
+    <hr />
+    <app-accordion
+        *ngFor="let faq of faqs"
+        [faq]="faq"
+        (toggleFaq)="toggleFaq($event)">
+    </app-accordion>
+</div>
